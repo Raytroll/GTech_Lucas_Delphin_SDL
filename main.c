@@ -28,7 +28,7 @@ void init_SDL() {
 
 int main(int argc, char* argv[]) {
     init_SDL();
-    SDL_Window* win = SDL_CreateWindow("GAME", 
+    SDL_Window* win = SDL_CreateWindow("SDL Project", 
     SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 800, 600, 0);
     SDL_Renderer* rend = SDL_CreateRenderer(win, -1, SDL_RENDERER_ACCELERATED);
     SDL_Texture* BACKGROUND_TEXTURE = load_BMP_image(win, rend);
