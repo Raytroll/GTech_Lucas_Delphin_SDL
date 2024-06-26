@@ -73,7 +73,7 @@ int update_player(CONTROLER* CONTROLER, Player* PLAYER) {
     if (PLAYER->x + 10 + CONTROLER->DIR.x < SCREEN_WIDTH && 
     PLAYER->x + CONTROLER->DIR.x > 0)
     PLAYER->x += CONTROLER->DIR.x;
-    if (PLAYER->y+10+CONTROLER->DIR.y < SCREEN_HEIGHT && 
+    if (PLAYER->y + 10 + CONTROLER->DIR.y < SCREEN_HEIGHT && 
     PLAYER->y+CONTROLER->DIR.y > 0)
     PLAYER->y += CONTROLER->DIR.y;
 }
