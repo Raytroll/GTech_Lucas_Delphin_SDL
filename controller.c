@@ -43,7 +43,8 @@ int handle_events(SDL_Window* win, SDL_Renderer* rend, CONTROLER* CONTROLER) {
             SDL_DestroyRenderer(rend);
             SDL_DestroyWindow(win);
             SDL_Quit();
-            return 1;}
+            return 1;
+        }
         if (event.type == SDL_KEYDOWN) {
             if (event.key.keysym.sym == SDLK_UP)
             CONTROLER->DIR.y = -1 * PLAYER_SPEED;
@@ -52,7 +53,8 @@ int handle_events(SDL_Window* win, SDL_Renderer* rend, CONTROLER* CONTROLER) {
             if (event.key.keysym.sym == SDLK_LEFT)
             CONTROLER->DIR.x = -1 * PLAYER_SPEED;
             if (event.key.keysym.sym == SDLK_RIGHT)
-            CONTROLER->DIR.x = 1 * PLAYER_SPEED;}
+            CONTROLER->DIR.x = 1 * PLAYER_SPEED;
+        }
         if (event.type == SDL_KEYUP) {
             if (event.key.keysym.sym == SDLK_UP)
             CONTROLER->DIR.y = 0 * PLAYER_SPEED;
@@ -61,7 +63,8 @@ int handle_events(SDL_Window* win, SDL_Renderer* rend, CONTROLER* CONTROLER) {
             if (event.key.keysym.sym == SDLK_LEFT)
             CONTROLER->DIR.x = 0 * PLAYER_SPEED;
             if (event.key.keysym.sym == SDLK_RIGHT)
-            CONTROLER->DIR.x = 0 * PLAYER_SPEED;}
+            CONTROLER->DIR.x = 0 * PLAYER_SPEED;
+        }
     }
     return 0;
 }
